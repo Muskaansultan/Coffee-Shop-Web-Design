@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Coffee Shop</title>
+ 
+    <style>
+      .nav-item a:hover{
+        color: aliceblue;
+        background-color: crimson;
+        border-color: aliceblue;
+        
+      }
+      .h2{
+        font-family: 'Great Vibes', cursive;}
+
+        .crousel-image{
+        margin-top: 2em;
+        height: 100vh;
+        width: 100vh;
+        position: fixed;
+        background-repeat: no-repeat;
+
+      }
+      .carousel {
+  position: relative;
+}
+#top-cards{
+  width: 100%;
+ /* height: 60vh;*/
+ 
+
+}
+.heading2{
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+
+}
+.heading2 span{
+  color: #b2744c;
+}
+#top-cards .container{
+  margin-top: 30px;
+}
+#top-cards .card img{
+   border-radius: 20px;
+   transition: 0.5s;
+  cursor: pointer;
+}
+#top-cards .card{
+   border-radius: 20px;
+} 
+#top-cards .card:hover{
+   transform: translateY(-10px);
+}   
+.heading3{
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+
+}  
+#us{
+  color: #b2744c;
+}
+#container2{
+  margin-top: 50px;
+}
+.star i{
+  color: #b2744c;
+}
+#menu .card{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+}
+#menu .card:hover{
+  transform: translateY(-10px);
+  }
+  #menu h2 {
+    text-align: center;
+  color: #b2744c;
+font-size: 25px;}
+#menu h3 {
+    text-align: center;
+  color: #b2744c;
+font-size: 16px;}
+
+
+    </style>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(5, 5, 5);">
+      <!--logo-->
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-cup-hot-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6H.5ZM13 12.5a2.01 2.01 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5Z"/>
+        <path d="m4.4.8-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 3.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8Zm3 0-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 6.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8Zm3 0-.003.004-.014.019a4.077 4.077 0 0 0-.204.31 2.337 2.337 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.198 3.198 0 0 1-.202.388 5.385 5.385 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 9.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8Z"/>
+      </svg>
+      <!--nav bar-->      
+        <a class="navbar-brand" href="#"><b class="text-center"><span class="text-danger">COF</span><span>FEE</span></b></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto text-white ">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+           
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Menu
+              </a>
+              <div class="dropdown-menu bg-dark text-light"  aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item text-light" href="#">Fries</a>
+                <a class="dropdown-item text-light" href="#">wings</a>
+                <a class="dropdown-item text-light" href="#">Burger</a>
+                <a class="dropdown-item text-light" href="#">Noodles</a>
+                <a class="dropdown-item text-light" href="#">Pizza</a>
+                <a class="dropdown-item text-light" href="#">Ice cream</a>
+                <a class="dropdown-item text-light" href="#">Drinks</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Contact us">Contact Us</a>
+                </li>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <header class="py-5 bg-image-full" style="background-image: url('https://images.unsplash.com/photo-1426174840074-541ae41efdb9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1476&q=80'); background-repeat: no-repeat; background-position: center; background-size: cover; height: 50em;">
+        <div class="text-center my-5">
+            <b class="text-white fs-3 fw-bolder"> <b><h2 class="text-white mt-lg-5" style="font-family: 'Great Vibes', cursive; letter-spacing: 2px; font-weight: 100 ; line-height: 70px;">Welcome To</b></h2>
+            <p class="text-white mb-0 "><h1 style="font-size: 35px;font-weight: 700;letter-spacing: 2px;">OUR COFFEE SHOP</h1></p>
+            <p class="text-center pr-5 pl-5 mr-lg-5 ml-lg-5 mt-1 font-weight-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium voluptatibus cumque et, molestiae veritatis, accusamus doloribus ex, velit nulla totam aliquam! Commodi distinctio ratione, tempore explicabo harum animi itaque esse.
+            </p>
+            <a href="#">
+                <button class="btn bg-danger border-transparent text-light mt-3"style="border: radius 30%;">Find Taste!</button>
+        </a>
+        </div>
+    </header>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2 my-5 ">
+        <h2 class="featurette-heading my-6 mx-3 text-center "> <span class="text-dark">ABOUT </span><span id="us">US</span></h2>
+        <h3 class="text-center mt-5"> <span class="text-dark mt-5">What Makes Our Coffee Special</span></h3>
+        <p class="lead my-5 mx-4 text-dark text-center pl-5 pr-5" >We make our own coffee special by the way we make it, the ingredients we use, and through the rituals we associate with it. Coffee is much more to coffee lovers than a mere relaxing beverage or a quick energy drink.
+          <spann>Coffee has a complex flavour profile. In other words, when we drink it, we experience a combination of flavours working together. This why coffee drinkers all taste (and smell) different things in their coffee.</spann>
+        <span>The flavours in coffee come from the beans – and the flavour of these is influenced by where they are grown. Flavours are enhanced again during the roasting process, and then again by the brewing method of the final drink.</span>
+        <a href="#">
+          <button class="btn bg-danger border-transparent text-light mt-3"style="border: radius 30%;">Learn More!</button>
+  </a></p>
+      
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="featurette-image img-fluid"  alt="500x500" src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" data-holder-rendered="true" style="width: 500px; height:550px;">
+      </div>
+    </div>
+   
+        <!-- top card strt-->
+        <section id="top-cards">
+          <div class="heading2">TOP <span>CATEGORIES</span></div>
+          <div class="container">
+          <div class="row">
+
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <img src="https://images.unsplash.com/photo-1588574982091-cf0c34ea0e4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                 alt="coffee">
+              </div>
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <img src="https://images.unsplash.com/photo-1534234757579-8ad69d218ad4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                 alt="coffee">
+              </div>
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <img src="https://images.unsplash.com/photo-1545731939-9c302d5d27ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                 alt="coffee">
+              </div>
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <img src="https://images.unsplash.com/photo-1535804042155-8449fa126b34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+                 alt="coffee">
+              </div>
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <img src="https://images.unsplash.com/photo-1503240700317-f9df07c1e79f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                 alt="coffee">
+              </div>
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <img src="https://images.unsplash.com/photo-1502165971801-35b35e7bbf9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                 alt="coffee">
+              </div>
+            </div>
+
+
+          </div>  
+          </div>
+        </section>
+      </div>
+        <!-- top card end-->
+        <hr>
+        <!-- menu strt-->
+        <section id=" menu">
+          <div class="container">
+            <div class="heading3">MENU</div>  
+          </div>
+           <div class="container" id="container2">
+            <div class="row">
+              <div class=col-md-3 py-3 py-md-0>
+                <div class="card">
+                  <img src="https://images.unsplash.com/photo-1615486780246-76e6bb33e8b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="img 1">
+                  <div class="card-body">
+                    <div class="star text-center text-dark">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3 class="text-center" style="color: #b2744c;">Coffee</h3>
+                    <p style="color: #b2744c;">$25 <span class="fa-solid fa-cart-shopping  ms-auto" style="color: #b2744c; float: right;"></span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class=col-md-3 py-3 py-md-0>
+                <div class="card">
+                  <img src="https://images.unsplash.com/photo-1455813870877-04a32045af63?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1510&q=80" alt="img 1">
+                  <div class="card-body">
+                    <div class="star text-center text-dark">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3 class="text-center" style="color: #b2744c;">Coffee</h3>
+                    <p style="color: #b2744c;">$25 <span class="fa-solid fa-cart-shopping  ms-auto" style="color: #b2744c;float: right;"></span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class=col-md-3 py-3 py-md-0>
+                <div class="card">
+                  <img src="https://images.unsplash.com/photo-1627777620905-53a332869051?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="img 1">
+                  <div class="card-body">
+                    <div class="star text-center text-dark">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3 class="text-center" style="color: #b2744c;">Coffee</h3>
+                    <p style="color: #b2744c;">$25 <span class="fa-solid fa-cart-shopping  ms-auto" style="color: #b2744c; float: right;"></span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class=col-md-3 py-3 py-md-0>
+                <div class="card">
+                  <img src="https://images.unsplash.com/photo-1600056781444-55f3b64235e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1364&q=80" alt="img 1">
+                  <div class="card-body">
+                    <div class="star text-center text-dark">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3 class="text-center" style="color: #b2744c;"">Coffee</h3>
+                    <p style="color: #b2744c;">$25 <span class="fa-solid fa-cart-shopping  ms-auto" style="color: #b2744c;float: right;"></span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class=col-md-3 py-3 py-md-0>
+                <div class="card">
+                  <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="img 1">
+                  <div class="card-body">
+                    <div class="star text-center text-dark">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3 class="text-center" style="color: #b2744c;" >Coffee</h3>
+                    <p style="color: #b2744c;">$25 <span class="fa-solid fa-cart-shopping  ms-auto" style="color: #b2744c;float: right;"></span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class=col-md-3 py-3 py-md-0>
+                <div class="card">
+                  <img src="https://images.unsplash.com/photo-1519174467875-72be1307eb40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="img 1">
+                  <div class="card-body">
+                    <div class="star text-center text-dark">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3 class="text-center" style="color: #b2744c;">Coffee</h3>
+                    <p style="color: #b2744c;">$25 <span class="fa-solid fa-cart-shopping  ms-auto" style="color: #b2744c;float: right;"></span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class=col-md-3 py-3 py-md-0>
+                <div class="card">
+                  <img src="https://images.unsplash.com/photo-1529892485617-25f63cd7b1e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="img 1">
+                  <div class="card-body">
+                    <div class="star text-center text-dark">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3 class="text-center" style="color: #b2744c;" >Coffee</h3>
+                    <p style="color: #b2744c;">$25 <span class="fa-solid fa-cart-shopping  ms-auto" style="color: #b2744c;float: right;"></span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class=col-md-3 py-3 py-md-0>
+                <div class="card">
+                  <img src="https://images.unsplash.com/photo-1497636577773-f1231844b336?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="img 1">
+                  <div class="card-body">
+                    <div class="star text-center text-dark">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3 class="text-center" style="color: #b2744c;">Coffee</h3>
+                    <p style="color: #b2744c;">$25 <span  class="fa-solid fa-cart-shopping ms-auto" style="color: #b2744c;float: right;"></span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+           </div>
+            
+           </div>
+           
+           
+        </section>
+
+        <!-- menu end-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

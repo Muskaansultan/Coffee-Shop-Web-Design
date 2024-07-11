@@ -1,0 +1,922 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" >
+    <link rel="stylesheet" href="tabbar.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="Main.css">
+    <title>Coffee shop</title>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(34, 28, 23);">
+      <!--logo-->
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-cup-hot-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6H.5ZM13 12.5a2.01 2.01 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5Z"/>
+        <path d="m4.4.8-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 3.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8Zm3 0-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 6.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8Zm3 0-.003.004-.014.019a4.077 4.077 0 0 0-.204.31 2.337 2.337 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.198 3.198 0 0 1-.202.388 5.385 5.385 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 9.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8Z"/>
+      </svg>
+      <!--nav bar-->      
+        <a class="navbar-brand" href="#"><b class="text-center" style="font-size: 18px;"><span class="text-danger">COF</span><span>FEE</span></b></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto text-white ">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Menu</a>
+            </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="user-account.html">Login</a>
+                </li>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <header class="py-5 bg-image-full" style="background-image: url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80'); background-repeat: no-repeat; background-position: center; background-size: cover; height: 50em;">
+        <div class="text-center my-5">
+            <b class="text-white fs-3 fw-bolder"> <b><h2 class="text-white mt-lg-5" style="font-family: 'Great Vibes', cursive; letter-spacing: 2px; font-weight: 100 ; line-height: 70px; font-size: 25px;">Welcome To</b></h2>
+            <p class="text-white mb-0 "><h1 style="font-size: 35px;font-weight: 700;letter-spacing: 2px;">OUR COFFEE SHOP</h1></p>
+            <p class="text-center pr-5 pl-5 mr-lg-5 ml-lg-5 mt-1 font-weight-normal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium voluptatibus cumque et, molestiae veritatis, accusamus doloribus ex, velit nulla totam aliquam! Commodi distinctio ratione, tempore explicabo harum animi itaque esse.
+            </p>
+            <a href="#top-categories">
+                <button class="btn bg-danger border-transparent text-light mt-3"style="border: radius 30%; height: 3em; width:8em ;font-size:15px">Find Taste!</button>
+        </a>
+        </div>
+    </header>
+    <hr class="featurette-divider" style="color: #b2744c ; height:8%;">
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2 my-5 ">
+        <h2 class="featurette-heading my-6 mx-3 text-center " style="font-size: 2em;"> <span class="text-dark">ABOUT </span><span id="us">US</span></h2>
+        <h3 class="text-center mt-5" style="font-size: 19px;"> <span class="text-dark mt-5">What Makes Our Coffee Special</span></h3>
+        <p class="lead my-5 mx-4 text-dark text-center pl-5 pr-5" style="font-size: 18px;" >We make our own coffee special by the way we make it, the ingredients we use, and through the rituals we associate with it. Coffee is much more to coffee lovers than a mere relaxing beverage or a quick energy drink.
+          <span>Coffee has a complex flavour profile. In other words, when we drink it, we experience a combination of flavours working together. This why coffee drinkers all taste (and smell) different things in their coffee.</span>
+        
+       <span > <a class="text-danger" href="#top-categories">
+          Learn More!
+  </a></span></p>
+      
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img id="image1" class="featurette-image img-fluid pl-5"  alt="500x500" src="https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" data-holder-rendered="true" style="width: 400px; height:559px;">
+      </div>
+    </div>
+    
+   
+        <!-- top card strt-->
+        <section class="pt-5" id="top-cards">
+          <div class="heading2" id="top-categories">TOP <span>CATEGORIES</span></div>
+          <section id="tranding">
+            <div class="container">
+              <div class="swiper tranding-slider">
+                <div class="swiper-wrapper">
+                  <!-- Slide-start -->
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="https://images.unsplash.com/photo-1534234757579-8ad69d218ad4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Tranding">
+                    </div>
+                    <a href="m8.html">
+                    <div class="tranding-slide-content">
+                      <h1 class="food-price">$20</h1>
+                      <div class="tranding-slide-content-bottom">
+                        <h2 class="food-name">
+                          Cappucino
+                        </h2>
+                        <h3 class="food-rating">
+                          <span>4.7</span>
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                          </div>
+                        </h3>
+                      </div>
+                    </div>
+                  </a>
+                  </div>
+                  <!-- Slide-end -->
+                  <!-- Slide-start -->
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="https://images.unsplash.com/photo-1497636577773-f1231844b336?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Tranding">
+                    </div>
+                    <a href="m8.html">
+                    <div class="tranding-slide-content">
+                      <h1 class="food-price">$20</h1>
+                      <div class="tranding-slide-content-bottom">
+                        <h2 class="food-name">
+                          Macchiato
+                        </h2>
+                        <h3 class="food-rating">
+                          <span>4.5</span>
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                          </div>
+                        </h3>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <!-- Slide-end -->
+                  <!-- Slide-start -->
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="https://images.unsplash.com/photo-1545731939-9c302d5d27ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Tranding">
+                    </div>
+                    <a href="m10.html">
+                    <div class="tranding-slide-content">
+                      <h1 class="food-price">$40</h1>
+                      <div class="tranding-slide-content-bottom">
+                        <h2 class="food-name">
+                          Mocha
+                        </h2>
+                        <h3 class="food-rating">
+                          <span>4.8</span>
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                          </div>
+                        </h3>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <!-- Slide-end -->
+                  <!-- Slide-start -->
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="https://images.unsplash.com/photo-1535804042155-8449fa126b34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Tranding">
+                    </div>
+                    <a href="m4.html">
+                    <div class="tranding-slide-content">
+                      <h1 class="food-price">$15</h1>
+                      <div class="tranding-slide-content-bottom">
+                        <h2 class="food-name">
+                          Latte
+                        </h2>
+                        <h3 class="food-rating">
+                          <span>4.6</span>
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                          </div>
+                        </h3>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <!-- Slide-end -->
+                  <!-- Slide-start -->
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="https://images.unsplash.com/photo-1503240700317-f9df07c1e79f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Tranding">
+                    </div>
+                    <a href="m9.html">
+                    <div class="tranding-slide-content">
+                      <h1 class="food-price">$15</h1>
+                      <div class="tranding-slide-content-bottom">
+                        <h2 class="food-name">
+                          Flat White
+                        </h2>
+                        <h3 class="food-rating">
+                          <span>4.3</span>
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                          </div>
+                        </h3>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <!-- Slide-end -->
+                  <!-- Slide-start -->
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="https://images.unsplash.com/photo-1502165971801-35b35e7bbf9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Tranding">
+                    </div>
+                    <a href="m7.html">
+                    <div class="tranding-slide-content">
+                      <h1 class="food-price">$20</h1>
+                      <div class="tranding-slide-content-bottom">
+                        <h2 class="food-name">
+                          Irish
+                        </h2>
+                        <h3 class="food-rating">
+                          <span>4.9</span>
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                          </div>
+                        </h3>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <!-- Slide-end -->
+                  <!-- Slide-start -->
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Tranding">
+                    </div>
+                    <a href="m5.html">
+                    <div class="tranding-slide-content">
+                      <h1 class="food-price">$8</h1>
+                      <div class="tranding-slide-content-bottom">
+                        <h2 class="food-name">
+                          Americano
+                        </h2>
+                        <h3 class="food-rating">
+                          <span>4.2</span>
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                          </div>
+                        </h3>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <!-- Slide-end -->
+                </div>
+      
+                <div class="tranding-slider-control">
+                  <div class="swiper-button-prev slider-arrow">
+                    <ion-icon name="arrow-back-outline"></ion-icon>
+                  </div>
+                  <div class="swiper-button-next slider-arrow">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+      
+              </div>
+            </div>
+          </section>
+      
+          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+          <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+          <script src="script.js"></script>
+          
+        </section>
+      </div>
+        <!-- top card end-->
+        <hr>
+        
+        <!-- menu strt-->
+        <section id=" menu">
+          <div class="container">
+            <div class="heading3" id="menu">MENU</div>  
+          </div>
+           <div class="container pb-5" id="container2" >
+            <div class="row " id="row1">
+              <div class=col-md-2>
+                <a href="m1.html" id="cards">
+                <div class="card " style="border: 1px solid #000000;">
+                 
+                  <img src="https://images.unsplash.com/photo-1615486780246-76e6bb33e8b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" height="350"  alt="img 1">
+                  <div class="card-body">
+                    <div class="star text-center text-dark">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3 class="text-center" style="color: #b2744c;">Coffee</h3>
+                    <p style="color: #b2744c;">$25 <span class="fa-solid fa-cart-shopping  ms-auto" style="color: #b2744c; float: right;"></span></p>
+                  </div>
+                </div></a>
+              </div>
+
+              <div class=col-md-2 >
+                <a href="m2.html" id="cards">
+                <div class="card"style="border: 1px solid #000;">
+                  <img src="https://images.unsplash.com/photo-1455813870877-04a32045af63?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1510&q=80" height="350" alt="img 2">
+
+                  <div class="card-body">
+                    <div class="star text-center text-dark">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3 class="text-center" style="color: #b2744c;">Coffee</h3>
+                    <p style="color: #b2744c;">$25 <span class="fa-solid fa-cart-shopping  ms-auto" style="color: #b2744c;float: right;"></span></p>
+                  </div>
+                </div></a>
+              </div>
+
+              <div class=col-md-2 >
+                <a href="m3.html" id="cards">
+                <div class="card"style="border: 1px solid #000;">
+                  <img src="https://images.unsplash.com/photo-1627777620905-53a332869051?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" height="350" alt="img 3">
+                  
+                  <div class="card-body">
+                    <div class="star text-center text-dark">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3 class="text-center" style="color: #b2744c;">Coffee</h3>
+                    <p style="color: #b2744c;">$25 <span class="fa-solid fa-cart-shopping  ms-auto" style="color: #b2744c; float: right;"></span></p>
+                  </div>
+                </div></a>
+              </div>
+
+              <div class=col-md-2>
+                <a href="m4.html" id="cards">
+                <div class="card"style="border: 1px solid #000;">
+                  <img src="https://images.unsplash.com/photo-1600056781444-55f3b64235e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1364&q=80"  height="350" alt="img 4">
+                 
+                  
+                   <div class="card-body">
+                    <div class="star text-center text-dark">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3 class="text-center" style="color: #b2744c;"">Coffee</h3>
+                    <p style="color: #b2744c;">$25 <span class="fa-solid fa-cart-shopping  ms-auto" style="color: #b2744c;float: right;"></span></p>
+                  </div>
+                </div></a>
+              </div>
+            
+            
+              <div class="col-md-2">
+                <a href="m5.html" id="cards">
+                <div class="card"style="border: 1px solid #000;">
+                  <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" height="350" alt="img 5">
+           
+                  <div class="card-body">
+                    <div class="star text-center text-dark">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3 class="text-center" style="color: #b2744c;" >Coffee</h3>
+                    <p style="color: #b2744c;">$25 <span class="fa-solid fa-cart-shopping  ms-auto" style="color: #b2744c;float: right;"></span></p>
+                  </div>
+                </div></a>
+              </div>
+
+              <div class=col-md-2>
+                <a href="m6.html" id="cards">
+                <div class="card "style="border: 1px solid #000;">
+                  <img src="https://images.unsplash.com/photo-1519174467875-72be1307eb40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" height="350" width="195" alt="img 6">
+                  <a href="m1.html" id="cards">
+                  <div class="card-body">
+                    <div class="star text-center text-dark">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3 class="text-center" style="color: #b2744c;">Coffee</h3>
+                    <p style="color: #b2744c;">$25 <span class="fa-solid fa-cart-shopping  ms-auto" style="color: #b2744c;float: right;"></span></p>
+                  </div>
+                </div></a>
+              </div>
+              </div>
+              <div class="row">
+              <div class=col-md-2>
+                <a href="m7.html" id="cards">
+                <div class="card "style="border: 1px solid #000;">
+                  <img src="https://images.unsplash.com/photo-1529892485617-25f63cd7b1e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" height="350" alt="img 7">
+                  <div class="card-body">
+                    <div class="star text-center text-dark">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3 class="text-center" style="color: #b2744c;" >Coffee</h3>
+                    <p style="color: #b2744c;">$25 <span class="fa-solid fa-cart-shopping  ms-auto" style="color: #b2744c;float: right;"></span></p>
+                  </div>
+                </div></a>
+              </div>
+
+              <div class=col-md-2>
+                <div class="card " style="border: 1px solid #000;">
+                   <a href="m8.html" id="cards">
+                  <img src="https://images.unsplash.com/photo-1497636577773-f1231844b336?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" height="350" width="193" alt="img 8">
+                  <div class="card-body">
+                    <div class="star text-center text-dark">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3 class="text-center" style="color: #b2744c;">Coffee</h3>
+                    <p style="color: #b2744c;">$25 <span  class="fa-solid fa-cart-shopping ms-auto" style="color: #b2744c;float: right;"></span></p>
+                  </div>
+                </div></a>
+              </div>
+
+              <div class=col-md-2>
+                <a href="m9.html" id="cards">
+                <div class="card " style="border: 1px solid #000000;">
+                  <img src="https://images.unsplash.com/photo-1572097662444-003d63fe5884?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" height="350"  alt="img 9">
+                  <div class="card-body">
+                    <div class="star text-center text-dark">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3 class="text-center" style="color: #b2744c;">Coffee</h3>
+                    <p style="color: #b2744c;">$25 <span class="fa-solid fa-cart-shopping  ms-auto" style="color: #b2744c; float: right;"></span></p>
+                  </div>
+                </div></a>
+              </div>
+
+              <div class=col-md-2>
+                <a href="m10.html" id="cards">
+                <div class="card " style="border: 1px solid #000000;">
+                  <img src="https://images.unsplash.com/photo-1635090976010-d3f6dfbb1bac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" height="350"  alt="img 10">
+                  <div class="card-body">
+                    <div class="star text-center text-dark">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3 class="text-center" style="color: #b2744c;">Coffee</h3>
+                    <p style="color: #b2744c;">$25 <span class="fa-solid fa-cart-shopping  ms-auto" style="color: #b2744c; float: right;"></span></p>
+                  </div>
+                </div></a>
+              </div>
+
+              <div class=col-md-2>
+                <a href="m11.html" id="cards">
+                <div class="card " style="border: 1px solid #000000;">
+                  <img src="https://images.unsplash.com/photo-1521161908453-1cacd0215437?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" height="350"  alt="img 11">
+                  <div class="card-body">
+                    <div class="star text-center text-dark">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3 class="text-center" style="color: #b2744c;">Coffee</h3>
+                    <p style="color: #b2744c;">$25 <span class="fa-solid fa-cart-shopping  ms-auto" style="color: #b2744c; float: right;"></span></p>
+                  </div>
+                </div></a>
+              </div>
+
+              <div class=col-md-2>
+                <a href="m12.html" id="cards">
+                <div class="card " style="border: 1px solid #000000;">
+                  <img src="https://images.unsplash.com/photo-1572286258217-40142c1c6a70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1364&q=80" height="350"  alt="img 12">
+                  <div class="card-body">
+                    <div class="star text-center text-dark">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3 class="text-center" style="color: #b2744c;">Coffee</h3>
+                    <p style="color: #b2744c;">$25 <span class="fa-solid fa-cart-shopping  ms-auto" style="color: #b2744c; float: right;"></span></p>
+                  </div>
+                </div></a>
+              </div>
+            </div>
+          </div>
+           </div>
+            
+          
+           
+           
+        </section>
+
+        <!-- menu end-->
+        <!--product strt-->
+        <section id=" menu">
+          <div class="container">
+            <div class="heading3" id="products">PRODUCTS</div>  
+          </div>
+           <div class="container pb-3" id="container2">
+            <div class="row pb-3">
+              <div class="col-md-2 py-3 py-md-0 border-dark" >
+                <a href="p1.html" id="cards">
+                <div class="card" style="border: 1px solid #000;">
+                  <img src="https://th.bing.com/th/id/OIP.5Dh80d70SMNa_jlbxRGDHAAAAA?pid=ImgDet&rs=1" alt="img 1">
+                  <div class="card-body">
+                    
+                    <h3 class="text-center pb-3" style="color: #b2744c;">Housten</h3>
+                    <p style="color: #b2744c;">$25 <span class="fa-solid fa-cart-shopping  ms-auto" style="color: #b2744c; float: right;"></span></p>
+                  </div>
+                </div></a>
+              </div>
+
+              <div class=col-md-2 py-3 py-md-0>
+                <a href="p2.html" id="cards">
+                <div class="card"style="border: 1px solid #000;">
+                  <img src="https://th.bing.com/th/id/OIP.bDK8IQcnCIii_W7FHA_pMQHaHa?pid=ImgDet&rs=1" alt="img 2">
+                  <div class="card-body">
+                    
+                    <h3 class="text-center pb-3" style="color: #b2744c;">Esspresso</h3>
+                    <p style="color: #b2744c;">$25 <span class="fa-solid fa-cart-shopping  ms-auto" style="color: #b2744c;float: right;"></span></p>
+                  </div>
+                </div></a>
+              </div>
+
+              <div class=col-md-2 py-3 py-md-0>
+                <a href="p3.html" id="cards">
+                <div class="card"style="border: 1px solid #000;">
+                  <img src="https://th.bing.com/th/id/OIP.u6gFHNTLsAETPtyIxxiH9gHaHa?w=600&h=600&rs=1&pid=ImgDetMain" alt="img 3">
+                  <div class="card-body">
+                    
+                    <h3 class="text-center pb-3" style="color: #b2744c;">French Roast</h3>
+                    <p style="color: #b2744c;">$25 <span class="fa-solid fa-cart-shopping  ms-auto" style="color: #b2744c; float: right;"></span></p>
+                  </div>
+                </div></a>
+              </div>
+
+              <div class=col-md-2 py-3 py-md-0>
+                <a href="p4.html" id="cards">
+                <div class="card"style="border: 1px solid #000;">
+                  <img src="https://i5.walmartimages.com/asr/c37405f7-de89-47d1-8feb-9a163138bde1.d3a9da17808b3ca5cdbc96b94668da93.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="img 4">
+                  <div class="card-body">
+                    
+                    <h3 class="text-center pb-3" style="color: #b2744c;"">French Roast</h3>
+                    <p style="color: #b2744c;">$25 <span class="fa-solid fa-cart-shopping  ms-auto" style="color: #b2744c;float: right;"></span></p>
+                  </div>
+                </div></a>
+              </div>
+            
+
+              <div class=col-md-2 py-3 py-md-0>
+                <a href="p5.html" id="cards">
+                <div class="card"style="border: 1px solid #000;">
+                  <img src="https://th.bing.com/th/id/OIP.7dvfPmx_VRKXrTLgVEZ6rwHaHa?pid=ImgDet&rs=1" alt="img 5">
+                  <div class="card-body">
+                   
+                    <h3 class="text-center pb-3" style="color: #b2744c;" >Esspresso</h3>
+                    <p style="color: #b2744c;">$25 <span class="fa-solid fa-cart-shopping  ms-auto" style="color: #b2744c;float: right;"></span></p>
+                  </div>
+                </div></a>
+              </div>
+
+              <div class=col-md-2 py-3 py-md-0>
+                   <a href="p6.html" id="cards">
+                <div class="card"style="border: 1px solid #000;">
+                  <img src="https://starbmag.com/wp-content/uploads/2022/08/image-459.png" alt="img 6">
+                  <div class="card-body">
+                   
+                    <h3 class="text-center pb-3" style="color: #b2744c;">Italian </h3>
+                    <p style="color: #b2744c;">$25 <span class="fa-solid fa-cart-shopping  ms-auto" style="color: #b2744c;float: right;"></span></p>
+                  </div>
+                </div></a>
+              </div></div>
+            
+              <div class="row">
+              <div class=col-md-2 py-3 py-md-0>
+                <a href="p7.html" id="cards">
+                <div class="card"style="border: 1px solid #000;">
+                  <img src="https://th.bing.com/th/id/OIP.WWfW0_PU5zsy3Tzo1-X8lQHaHa?rs=1&pid=ImgDetMain" alt="img 7">
+                  <div class="card-body">
+                    
+                    <h3 class="text-center pb-3" style="color: #b2744c;" >Classic</h3>
+                    <p style="color: #b2744c;">$25 <span class="fa-solid fa-cart-shopping  ms-auto" style="color: #b2744c;float: right;"></span></p>
+                  </div>
+                </div></a>
+              </div>
+
+              <div class=col-md-2 py-3 py-md-0>
+                <a href="p8.html" id="cards">
+                <div class="card"style="border: 1px solid #000;">
+                  <img src="https://i.pinimg.com/736x/94/cb/be/94cbbe71cf71a7bb7570677060d9ece3.jpg" alt="img 8">
+                  <div class="card-body">
+                   
+                    <h3 class="text-center pb-3" style="color: #b2744c;">Latte</h3>
+                    <p style="color: #b2744c;">$25 <span  class="fa-solid fa-cart-shopping ms-auto" style="color: #b2744c;float: right;"></span></p>
+                  </div>
+                </div></a>
+              </div>
+              <div class=col-md-2 py-3 py-md-0>
+                <a href="p9.html" id="cards">
+                <div class="card"style="border: 1px solid #000;">
+                  <img src="https://mfdfood.com.au/13394-medium_default/espresso-beans-1kg.jpg" alt="img 9">
+                  <div class="card-body">
+                   
+                    <h3 class="text-center pb-3" style="color: #b2744c;">Grindres</h3>
+                    <p style="color: #b2744c;">$25 <span class="fa-solid fa-cart-shopping  ms-auto" style="color: #b2744c;float: right;"></span></p>
+                  </div>
+                </div></a>
+              </div>
+              <div class=col-md-2 py-3 py-md-0>
+                <a href="p10.html" id="cards">
+                <div class="card"style="border: 1px solid #000;">
+                  <img src="https://th.bing.com/th/id/OIP.pqXOHCWwhJwDZ-ObbMONsQHaHa?pid=ImgDet&rs=1" alt="img 10">
+                  <div class="card-body">
+                   
+                    <h3 class="text-center pb-3" style="color: #b2744c;">Moja Organic</h3>
+                    <p style="color: #b2744c;">$25 <span class="fa-solid fa-cart-shopping  ms-auto" style="color: #b2744c;float: right;"></span></p>
+                  </div>
+                </div></a>
+              </div>
+              <div class=col-md-2 py-3 py-md-0>
+                <a href="p11.html" id="cards">
+                <div class="card"style="border: 1px solid #000;">
+                  <img src="https://th.bing.com/th/id/OIP.re2R_q7COpEhVNJIvjK4WQHaHa?pid=ImgDet&rs=1" alt="img 11">
+                  <div class="card-body">
+                   
+                    <h3 class="text-center pb-3" style="color: #b2744c;">Cold Brew</h3>
+                    <p style="color: #b2744c;">$25 <span class="fa-solid fa-cart-shopping  ms-auto" style="color: #b2744c;float: right;"></span></p>
+                  </div>
+                </div></a>
+              </div>
+              <div class=col-md-2 py-3 py-md-0>
+                <a href="p12.html" id="cards">
+                <div class="card"style="border: 1px solid #000;">
+                  <img src="https://i5.walmartimages.com/asr/bb2354af-56b3-4bb3-9b9f-34b511e6cd6c_1.14b037cb5dacc76c07002f4e250d5a9c.jpeg" alt="img 12">
+                  <div class="card-body">
+                   
+                    <h3 class="text-center pb-3" style="color: #b2744c;">Colombia</h3>
+                    <p style="color: #b2744c;">$25 <span class="fa-solid fa-cart-shopping  ms-auto" style="color: #b2744c;float: right;"></span></p>
+                  </div>
+                </div></a>
+              </div>
+            </div>
+            
+           </div>
+            
+           </div>
+           
+           
+        </section>
+        <!--products end-->
+        
+
+  <nav class="h2-tabbar" id="lzd-h2-tabbar">
+    
+    <a class="item selected home" href="#">
+        <div class="icon">
+            <svg class="svg-icon" aria-hidden="true">
+              <div class="icon mr-lg-4" style="color:#b2744c;">
+                <i class="fa fa-home-lg"></i>
+              </div>
+                <use class="ui  selected" ></use>
+            </svg>
+        </div>
+        <span class="text">Home</span>
+        
+    </a>
+
+    <a class="item categories" href="#top-categories">
+        <div class="icon">
+            <svg class="svg-icon" aria-hidden="true">
+               <div class="icon mr-lg-4" style="color:#b2744c;">
+              <i class="fa fa-bars"></i>
+            </div>
+                <use class="ui " ></use>
+            </svg>
+        </div>
+        <span class="text">Categories</span>
+        
+    </a>
+
+    <a class="item cart" href="cart.html">
+        <div class="icon">
+            <svg class="svg-icon" aria-hidden="true">
+              <div class="icon mr-lg-4" style="color:#b2744c;">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+                <use class="ui " ></use>
+            </svg>
+        </div>
+        <span class="text">Cart</span>
+        
+            <span class="cart-num"></span>
+        
+    </a>
+
+    <a class="item account" href="user-account.html">
+        <div class="icon">
+            <svg class="svg-icon" aria-hidden="true">
+              <div class="icon mr-lg-4" style="color:#b2744c;">
+                <i class="fa fa-user-circle"></i>
+              </div>
+              <use class="ui"></use>
+            </svg>
+        </div>
+        <span class="text">Account</span>
+        
+    </a>
+
+</nav>
+
+
+  <!-- Footer -->
+  <footer id="footer"
+          class="text-center text-lg-start text-white font-weight-light"
+          style="background-color:#271609"
+          >
+    <!-- Grid container -->
+    <div class="container  pb-lg-5 font-weight-light">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 " style="font-size: 15px;">
+            <h6 class="text-uppercase mb-4 font-weight-bold" style="font-size: 20px;">
+              COFFEE SHOP
+            </h6>
+            <p style="font-size: 15px;">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quaerat!
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3" style="font-size: 15px;">
+            <h6 class="text-uppercase mb-4 font-weight-bold " style="font-size: 20px;">Products</h6>
+            <p>
+              <a class="text-white">Lorem, ipsum.</a>
+            </p>
+            <p>
+              <a class="text-white">Lorem, ipsum.</a>
+            </p>
+            <p>
+              <a class="text-white">Lorem, ipsum.</a>
+            </p>
+            
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold" style="font-size: 20px;">
+              Useful links
+            </h6>
+            <p>
+              <a class="text-white">Your Account</a>
+            </p>
+            <p>
+              <a class="text-white">Shipping Rates</a>
+            </p>
+            <p>
+              <a class="text-white">Help</a>
+            </p>
+          </div>
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3" style="font-size: 15px;" >
+            <h6 class="text-uppercase mb-4 font-weight-bold" id="contact" style="font-size: 20px;">Contact</h6>
+            <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+            <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-3">
+
+      <!-- Section: Copyright -->
+      <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8 text-center text-md-start">
+            <!-- Copyright -->
+            <div class="p-3">
+              © 2023 Copyright:
+              <a class="text-white" href="#"
+                 >COFFE SHOP</a
+                >
+            </div>
+            <!-- Copyright -->
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            <!-- Facebook -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-facebook-f"></i
+              ></a>
+
+            <!-- Twitter -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-twitter"></i
+              ></a>
+
+            <!-- Google -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-google"></i
+              ></a>
+
+            <!-- Instagram -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-instagram"></i
+              ></a>
+          </div>
+          <!-- Grid column -->
+        </div>
+      </section>
+      <!-- Section: Copyright -->
+    </div>
+    <!-- Grid container -->
+  </footer>
+  <!-- Footer -->
+
+<!-- End of .container -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
